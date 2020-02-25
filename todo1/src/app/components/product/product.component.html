@@ -1,0 +1,10 @@
+<div>
+<label>Referencia: <input id="reference" name="reference" [(ngModel)]="reference"/></label>
+<label>Nombre: <input id="name" name="name" [(ngModel)]="name"/></label>
+<label>Descripci&otilde;n: <input id="description" name="description" [(ngModel)]="description"/></label>
+{{reference}}
+<div>
+<button (click)="save()">Guardar</button>
+<button (click)="clean()">Clean</button>
+</div>
+</div>
