@@ -1,0 +1,13 @@
+<div>
+
+	<div *ngIf="products != null">
+		<div *ngFor="let productr of products">
+			<ul>
+			<li>Reference: {{productr.references}}</li>
+			<li>Name: {{productr.name}}</li>
+			<li>Description: {{productr.description}}</li>
+			</ul>
+		</div>
+	</div>
+		
+</div>

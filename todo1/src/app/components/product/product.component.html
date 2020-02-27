@@ -1,10 +1,24 @@
-<div>
-<label>Referencia: <input id="reference" name="reference" [(ngModel)]="reference"/></label>
-<label>Nombre: <input id="name" name="name" [(ngModel)]="name"/></label>
-<label>Descripci&otilde;n: <input id="description" name="description" [(ngModel)]="description"/></label>
-{{reference}}
-<div>
-<button (click)="save()">Guardar</button>
-<button (click)="clean()">Clean</button>
-</div>
+<div >
+	<table>
+		<tr>
+			<td colspan="2"><h3>{{tittle}}</h3></td>
+		</tr>
+		<tr>
+			<td><label for="reference">Referencia:</label></td>
+			<td> <input id="reference" name="reference" [(ngModel)]="product.references"/></td>
+		</tr>
+		<tr>
+			<td><label  for="name">Nombre:</label></td>
+			<td> <input id="name" name="name" [(ngModel)]="product.name"/></td>
+		</tr>
+		<tr>
+			<td><label for="description">Descripci&otilde;n:</label></td>
+			<td> <input id="description" name="description" [(ngModel)]="product.description"/></td>
+		</tr>
+		<tr>
+			<td><button (click)="save()">Guardar</button></td>
+			<td><button (click)="clean()">Clean</button></td>
+		</tr>
+	</table>
+	{{product.status}}
 </div>
